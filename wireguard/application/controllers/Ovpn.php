@@ -22,7 +22,7 @@ class Ovpn extends CI_Controller {
 						'action' => 1
 					];
 					$this->db->insert('wireguard', $insert);
-					$title['msg'] = '<a class="badge badge-success" href="https://portal.bisaai.id/wireguard/data/'.$name.'.conf">Get File</a>';
+					$title['msg'] = '<a class="badge badge-success" href="data/'.$name.'.conf">Get File</a>';
 					$this->load->view('create', $title);
 				}
 			} else {

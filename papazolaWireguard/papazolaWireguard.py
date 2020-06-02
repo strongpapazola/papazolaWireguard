@@ -5,7 +5,7 @@ def main():
     db = mysql.connector.connect(
 	host='localhost',
 	user="root",
-	passwd="g0gr33n>yuk",
+	passwd="",
 	database="papazolaWireguard"
     )
 #cursor = db.cursor()
