@@ -1,0 +1,14 @@
+[Unit]
+Description=papazolaWireguard
+StartLimitBurst=5
+StartLimitIntervalSec=10
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/usr/bin/python3 /opt/papazolaApps/papazolaWireguard/papazolaWireguard.py
+
+[Install]
+WantedBy=multi-user.target
